@@ -87,12 +87,7 @@
         const app = initializeApp(firebaseConfig);
         const db = getFirestore(app);
 
-        let url = 'http://spartacodingclub.shop/sparta_api/weather/seoul';
-        fetch(url).then(res => res.json()).then(data => {
-            let temp = (data['temp']>20)?'더워요':'추워요';
-            $('#temper').text(temp);
-        })
-
+        
         $('#toggleBtn').click(async function () {
             $('#mypostingbox').toggle();
         })
