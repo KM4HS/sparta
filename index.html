@@ -105,7 +105,8 @@
                 'comment': comment,
                 'star': star
             }
-            await addDoc(collection(db, "movies") ,doc)
+            await addDoc(collection(db, "movies") ,doc);
+            alert('저장 완료!');
         }
         ) 
 
